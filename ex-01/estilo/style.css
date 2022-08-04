@@ -186,6 +186,10 @@ footer a:hover{
     text-decoration: underline;
 }
 
+footer p.externo::before{
+    content: '\1F530\00A0';
+}
+
 button{
     border-radius: 5px;
 }
