@@ -8,6 +8,12 @@
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
 }
 
 * {
@@ -18,8 +24,9 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: darkgray url('imagens/backgroun_cordel_2.jpg') center center no-repeat fixed;
     font-family: var(--fonte1);
+    background-size: cover;
 }
 
 header {
@@ -47,6 +54,103 @@ header a, footer a {
 
 header a:hover, footer a:hover {
     text-decoration: underline;
+}
+
+nav{
+    height: 30px;
+    margin-bottom: 20px;
+}
+.menu{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-color: #444;
+    right: 20px;
+    transition: all 0.5s ease;
+    height: auto;
+}
+.menu img{
+    height: 25px;
+}
+.menu a{
+    display:block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover{
+    background-color: #400;
+}
+.barra{
+    background-color: #fff;
+    width: 20px;
+    height: 5px;
+    margin: 7.5px;
+}
+.btnMenu{
+    cursor: pointer;
+}
+
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 42%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte3);
+    font-weight: normal;
+    font-size: 1.8em;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.24);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 0px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main h2 {
+    font-family: var(--fonte1);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 section {
@@ -83,13 +187,13 @@ section.imagem > p {
 }
 
 section#img01 {
-    background-image: url('../imagens/background001.jpg');
+    background-image: url('../imagens/background_cordel_1.jpg');
     background-position: right center;
     
 }
 
 section#img02 {
-    background-image: url('../imagens/background002.jpg');
+    background-image: url('../imagens/backgroun_cordel_2.jpg');
     
 }
 

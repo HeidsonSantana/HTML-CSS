@@ -205,5 +205,9 @@ dica: no deaftools (navegador-inspecionar) vc pode ir na caixa que quer alterar,
 
 
 Podemos usar uma imagem de fundo no CSS com o background-image: url('caminho da imagem(seja local ou na web)'); seja no body, em uma div, etc...
+Sempre vai acontecer a repetição de imagens e você pode selecionar um tamanho pra ela com o background-size porém para deixá-la sem repetição pode-se usar o
+background-repeat: no-repeat; mas para fazer que a imagem complete a tela e não distorça pode-se usar o background-size: cover; 
+para selecionar uma parte da foto podemos usar o background-position: left-center, left-bottom, right-top, etc...;
+height: 98vh; --> significa a altura da viewport(página)
 
 
