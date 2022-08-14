@@ -211,3 +211,14 @@ para selecionar uma parte da foto podemos usar o background-position: left-cente
 height: 98vh; --> significa a altura da viewport(página)
 
 
+------------------------------------------------------------------------------------------------------
+
+NO HTML podemos criar um, por exemplo, <h1 id="alguma coisa"> </h1>           /* tudo que em HTMLé id = em CSS #
+e no arquivo CSS       h1#algumacoisa ou somente #principal{                     em HTML é class = em CSS é .  */
+	caracteristicas desse meu h1
+}
+
+O problema doo ID é que só podemos ter um ID por arquivo .CSS. Para resolver este problema existem as classes (usando .nomedaclasse dentro do CSS)
+dentro da tag HTML podemos colocar mais de uma classe, por exemplo:
+ <h2 class="avancado destaque"> BLA BLA BLA </h2>    (classes . avancado e .destaque)
+
