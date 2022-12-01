@@ -1,0 +1,198 @@
+/* General */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(22,24,37,0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #161825;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #161825;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFF;
+    opacity: 1; /* Firefox */
+}
+
+#MenuSearchInput::placeholder{
+    color:#FFF;
+    opacity: 1; /* Firefox */
+}
+#MenuSearchInput:active, #MenuSearchInput:focus{
+    background:none !important;
+}
+#MenuSearchInput{
+    color: #FFF;
+    font-weight: bold;
+    border: 2px solid #FFF;
+}
+
+.station-hover:hover{
+    background:#eee;
+}
+
+.navbar-transparent #logo img{
+    max-height:54px;
+    transition:.3s;
+}
+#logo img{
+    max-height:32px;
+    transition:.3s;
+}
+.navbar-transparent #logo span{
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #ffba07;
+    transition:.3s;
+}
+#logo span{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #ffba07;
+    transition:.3s;
+}
+
+.mouse-hover:hover{
+    cursor:pointer;
+}
+
+.color-white{
+    color:#FFF !important;
+}
+
+.color-primary{
+    color:#161825 !important;
+}
+
+
+.bg-white{
+    background:#FFF !important;
+}
+
+.bg-primary{
+    background:#161825 !important;
+}
+
+/* Home Search */
+
+#autocomplete{
+    padding: 0px 20px 20px 40px;
+}
+
+#searchContainer{
+    /*border: 3px solid #FFF;
+    border-radius: 60px;*/
+}
+
+#HomeHeader.description{
+    font-size:10px !important;
+    font-weight: bold;
+}
+
+#HomeHeaderFuelDropdown{
+    width: 150px;
+    height: 62px;
+    font-size:18px;
+    margin-left: -150px;
+    background:none;
+    border:none;
+}
+#HomeHeaderFuelDropdown:hover{
+    border:none;
+}
+
+#HomeHeaderButton{
+    width: 150px;
+    height: 62px;
+    font-size:18px;
+    margin-left: 0px;
+    background:none;
+}
+
+#HomeHeaderInput{
+    border: 2px solid #FFF;
+    height: 62px;
+    font-size:18px;
+    padding-left:40px;
+}
+input#HomeHeaderInput::-webkit-input-placeholder {
+    color: #CCC !important;
+}
+#HomeHeaderInput::-moz-placeholder { /* Firefox 19+ */
+    color: #CCC !important;
+}
+#HomeHeaderInput:-ms-input-placeholder { /* IE 10+ */
+    color: #CCC !important;
+}
+#HomeHeaderInput:-moz-placeholder { /* Firefox 18- */
+    color: #CCC !important;
+}
+
+#Gasstation .gasstation-title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#Gasstation .flag{
+    width: 150px;
+}
+
+#Gasstation .comment .card-description{
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    color: #000 !important;
+}
+
+#Gasstation .buttonMap{
+    font-weight: bold;
+    font-size: 20px;
+    height: 62px;
+}
+#Gasstation .gasolina .price{
+    font-size: 28px;
+}
+
+#ListCountry .list-item:hover{
+    cursor:pointer;
+    background:#eee;
+    border:none;
+}
+
+
+/*-icone verificado-*/
+.now-ui-icons {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Nucleo Outline';
+    font-size: inherit;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bolder;
+    text-shadow: 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF, 1px 0px 0px #FFF;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mt--1{margin-top:-1.75rem!important}
+
+
+
+/*-Price average -*/
+p.text-justify.hover a span.text-muted.text-left.float-left:hover {
+    text-decoration: underline;
+}
+p.text-justify.hover a span.text-success.text-right.float-right.font-weight-normal:hover {
+    text-decoration: underline;
+}
+p.text-justify.hover a span.text-danger.text-right.float-right.font-weight-normal:hover {
+    text-decoration: underline;
+}
