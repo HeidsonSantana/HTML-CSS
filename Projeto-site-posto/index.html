@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TQGKT9H');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="https://precodoscombustiveis.com.br/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="imagens/icon-marker.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="4hVEB4QRgmc2BuluiEP4wyn8Y0JHsEfxjMtYKlZa">
+
+<title>PostoLocaliza</title>
+<meta name="description" content="Confira o pre&ccedil;o dos combust&iacute;veis (gasolina, &aacute;lcool, diesel) no Brasil. Valor por litro em reais. Veja os postos no mapa ou navegue atrav&eacute;s da lista.">
+<meta name="keywords" content="preço, combustíveis, gasolina, álcool, diesel, brasil, estados, cidades, postos, bairros, litro, litros, real, reais">
+<meta name="theme-color" content="#161825">
+<meta property="og:title" content="Preço dos combustíveis - Gaspass" />
+<meta property="og:description" content="Confira os pre&ccedil;o dos combust&iacute;veis na sua localidade" />
+<meta property="og:url" content="https://precodoscombustiveis.com.br" />
+<meta property="og:image" content="https://api.gaspass.com.br/assets/img/cover.png" />
+
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gaspassfuel" />
+    <meta name="twitter:creator" content="@gaspassfuel" />
+    <meta name="twitter:image" content="imagens/icon-marker.png>
+
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113363189-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113363189-1');
+    </script>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1511531556004960",
+    enable_page_level_ads: true
+    });
+    </script> -->
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+    
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__pt_br.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAa6umHHsUUEL8J4rj8iqf6z0_YTG6OkjU",
+            authDomain: "preco-dos-combustiveis.firebaseapp.com",
+            databaseURL: "https://preco-dos-combustiveis.firebaseio.com",
+            projectId: "preco-dos-combustiveis",
+            storageBucket: "preco-dos-combustiveis.appspot.com",
+            messagingSenderId: "985319645233"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    <script type="text/javascript">
+        // FirebaseUI config.
+        var uiConfig = {
+            signInSuccessUrl: 'https://precodoscombustiveis.com.br/pt-BR',
+            signInOptions: [
+                // Leave the lines as is for the providers you want to offer your users.
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                firebase.auth.FacebookAuthProvider.PROVIDER_ID/*,
+                firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+                firebase.auth.GithubAuthProvider.PROVIDER_ID,
+                firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+                firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID*/
+            ],
+            // tosUrl and privacyPolicyUrl accept either url string or a callback
+            // function.
+            // Terms of service url/callback.
+            tosUrl: 'https://precodoscombustiveis.com.br/user-terms',
+            // Privacy policy url/callback.
+            privacyPolicyUrl: function() {
+                window.location.assign('https://precodoscombustiveis.com.br/privacy-politics');
+            }
+        };
+
+        // Initialize the FirebaseUI Widget using Firebase.
+        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        // The start method will wait until the DOM is loaded.
+        // ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+
+    
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script type="text/javascript">
+        initApp = function() {
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    // User is signed in.
+                    var displayName = user.displayName;
+                    var email = user.email;
+                    var emailVerified = user.emailVerified;
+                    var photoURL = user.photoURL;
+                    var uid = user.uid;
+                    var phoneNumber = user.phoneNumber;
+                    var providerData = user.providerData;
+                    user.getIdToken().then(function(accessToken) {
+                        if (document.getElementById('sign-in-status')) {
+                            document.getElementById('sign-in-status').textContent = 'Signed in';
+                        }
+                        if (document.getElementById('sign-in')) {
+                            document.getElementById('sign-in').textContent = 'Sign out';
+                        }
+                        if (document.getElementById('account-details')) {
+                            document.getElementById('account-details').textContent = JSON.stringify({
+                                displayName: displayName,
+                                email: emailauth
+                            }, null, '  ');
+                        }
+                    });
+                } else {
+                    // User is signed out.
+                    /*document.getElementById('sign-in-status').textContent = 'Signed out';
+                    document.getElementById('sign-in').textContent = 'Sign in';
+                    document.getElementById('account-details').textContent = 'null';*/
+                }
+            }, function(error) {
+                console.log(error);
+            });
+        };
+
+        window.addEventListener('load', function() {
+            initApp()
+        });
+    </script>
+
+
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c4219a180b4ba001b1ee240&product=inline-share-buttons"></script>
+
+    <link href="https://precodoscombustiveis.com.br/css/app.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/png" href="https://precodoscombustiveis.com.br/img/gaspass_marca.png"/>
+
+    <!-- Theme style -->
+    
+<!-- Google Font: Source Sans Pro -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    
+
+    <link rel="apple-touch-icon" sizes="76x76" href="https://precodoscombustiveis.com.br/img/gaspass_marca.png">
+    <link rel="icon" type="image/png" href="https://precodoscombustiveis.com.br/img/gaspass_marca.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- CSS Files -->
+    
+    <link href="https://precodoscombustiveis.com.br/css/now-ui-kit.min.pro.css" rel="stylesheet" />
+    <link href="https://precodoscombustiveis.com.br/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    
+
+    <link href="https://precodoscombustiveis.com.br/css/gaspass.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .speech-bubble {
+            position: relative;
+            background: #f2ae07;
+            border-radius: .4em;
+        }
+
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 26px solid transparent;
+            border-right-color: #f2ae07;
+            border-left: 0;
+            border-top: 0;
+            margin-top: -13px;
+            margin-left: -26px;
+        }
+        .feedback {
+            background-color : #fdb808;
+            color: #111;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border-color: #e4a306;
+        }
+
+        #mybutton {
+            position: fixed;
+            /*bottom: -4px;*/
+            top: 45%;
+            left: 10px;
+            z-index: 999;
+        }
+        @media( max-width: 700px){
+            #mybutton {
+                display: none;
+                position: fixed;
+                /*bottom: -4px;*/
+                top: 45%;
+                left: 10px;
+                z-index: 999;
+            }
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #333 !important;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #333 !important;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #333 !important;
+        }
+    </style>
+
+    </head>
+
+<body class="index-page sidebar-collapse">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQGKT9H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="200">
+    
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand d-flex flex-row justify-content-center" href="/pt-BR" id="logo">
+                <img src="data:image/png;base64,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" />
+                <span class="color-accent align-self-center ml-3" style="text-transform: none"><b>Posto</b>&nbsp;Localiza</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar top-bar"></span>
+                <span class="navbar-toggler-bar middle-bar"></span>
+                <span class="navbar-toggler-bar bottom-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+            <ul class="navbar-nav">
+                
+                
+                
+                
+                
+                <div id="sign-in_custom">
+                    <li class="nav-item">
+                        <a class="nav-link " href="login.html">
+                            <i class="now-ui-icons users_single-02"></i>
+                            Entrar
+                        </a>
+                    </li>
+                </div>
+                <div id="sign-out_custom">
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <span id="username"></span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            
+                            <a href="#" class="dropdown-item  disabled" title="Em Construção" alt="Em Construção" disabled style="">Painel</a>
+                            <a href="#" class="dropdown-item  disabled" title="Em Construção" alt="Em Construção" disabled style="">Perfil</a>
+                            <a class="dropdown-item mouse-hover" onclick="logout()">Sair</a>
+
+                            
+                        </div>
+                    </li>
+                </div>
+                
+
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+                        
+                                                    <p>Portugues</p>
+                                                </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+                        <a class="dropdown-item mouse-hover" onclick="setLocale('en')">
+                            Inglês
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setLocale('es')">
+                            Espanhol
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setLocale('pt-BR')">
+                            Portugues
+                        </a>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" title="Baixe o app Android" data-placement="bottom" href="EM CONSTRUÇÃO" target="_blank">
+                        <i class="fab fa-android"></i>
+                        <p class="d-lg-none d-xl-none">Android</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Baixe o app iOS" data-placement="bottom" href="EM CONSTRUÇÃO" target="_blank">
+                        <i class="fab fa-apple"></i>
+                        <p class="d-lg-none d-xl-none">Apple</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Siga-nos!" data-placement="bottom" href="EM CONSTRUÇÃO" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <p class="d-lg-none d-xl-none">Twitter</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Curta nossa página!" data-placement="bottom" href="https://www.facebook.com/heidson.barbosa.5" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                        <p class="d-lg-none d-xl-none">Facebook</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Confira!" data-placement="bottom" href="https://www.instagram.com/barbosa.santana1234/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <p class="d-lg-none d-xl-none">Instagram</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-placement="bottom" href="EM CONSTRUÇÃO" target="_blank">
+                        <img style="width:16px;" src="" />
+                        &nbsp;&nbsp;Ajuda
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+    <script>
+
+        var loged = 0;
+        /*-Firebase-*/
+        firebase.auth().onAuthStateChanged(function(u) {
+            console.log('auth menu');
+            if (u) {
+                user = u;
+                // console.log(user);
+                $('#sign-in_custom').hide();
+                $('#sign-out_custom').show();
+                if(user.photoURL != null){
+                    $('#username').html('<img src="'+user.photoURL+'" style="border-radius:50%; width:30px; height:30px;">&nbsp;&nbsp;&nbsp;'+user.displayName.substring(0,25));
+                    $('#picturephotouser').attr('src',''+user.photoURL+'');
+                }else{
+                    $('#username').html(user.displayName.substring(0,25));
+                    $('#picturephotouser').attr('src','https://precodoscombustiveis.com.br/images/placeholder_user.jpg');
+                }
+                if(user.displayName.length > 25) $('#username').append("...");
+                /*$('#containerSearch').addClass('col-md-5');*/
+                /*$('#containerSearch').removeClass('col-md-6');*/
+                var c = "";
+                if(user.photoURL != null) c += '<img src="'+user.photoURL+'" style="border-radius:50%; width:52px; height:52px; margin-bottom:10px;"><br>';
+                c += '<b>'+user.displayName+'</b><br>'+user.email;
+                /*$('#username2').html(c);*/
+                user.getIdToken().then(function(datawithtoken) {
+                    // console.log(datawithtoken);
+                    var settings = {
+                        "async": true,
+                        "crossDomain": true,
+                        "url": "https://api.gaspass.com.br/v2/login",
+                        "method": "GET",
+                        "headers": {
+                            "Authorization": "Basic "+btoa(datawithtoken+':'),
+                            "cache-control": "no-cache",
+                            "Postman-Token": "12370737-5d05-42ae-8438-a3fb66a2aa24"
+                        }
+                    }
+
+                    $.ajax(settings).done(function (response) {
+                        loged = 1;
+                        console.log('logged');
+                        // console.log(response);
+                    });
+                });
+                $('#form_postcomment').show();
+            } else {
+                console.log("no user");
+                $('#form_postcomment').hide();
+                loged = 0;
+            }
+        });
+
+        function logout(){
+            firebase.auth().signOut();
+            //location.reload();
+            user = null;
+            console.log(user);
+            $('#sign-in_custom').show();
+            $('#sign-out_custom').hide();
+            $('#username').html("");
+            /*$('#containerSearch').removeClass('col-md-5');*/
+            /*$('#containerSearch').addClass('col-md-6');*/
+            /*$('#username2').html("");*/
+        }
+
+
+        // var x = document.getElementById("myLink").disabled;
+        var y = document.getElementsByClassName('disabled').disabled;
+    </script>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm" id="exampleModal_feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Gostou do novo site?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal_feedback_body">
+                <p>Diga como está sua experiencia.</p>
+                <form>
+                    <div class="form-group">
+                        
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu Email">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputNota">Nota</label><br>
+                        <i class="far fa-star" id="star_1"></i>
+                        <i class="far fa-star" id="star_2"></i>
+                        <i class="far fa-star" id="star_3"></i>
+                        <i class="far fa-star" id="star_4"></i>
+                        <i class="far fa-star" id="star_5"></i>
+                    </div>
+                    <div class="form-group">
+                        
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Comentário</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btn_close_feedback" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" id="btn_submit_feedback" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="wrapper">
+
+        <div class="HomeHeader">
+            <div class="page-header header-filter h-100 d-flex align-items-center">
+                <div class="page-header-image" style="background: url(https://precodoscombustiveis.com.br/img/gasbg.jpg); box-shadow: inset 0 0 0 1000px rgba(22,24,37,.8);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;"></div>
+                <div class="container p-0">
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <h1 class="title d-none d-md-block">Localize seu Posto<br></h1>
+                            <h4 class="title d-block d-md-none">Localize seu Posto<br></h4>
+                            
+                        </div>
+                        <div class="offset-md-2 col-md-8 offset-1 col-10">
+    <div class="card card-raised card-form-horizontal card-plain" data-background-color>
+        <div class="card-body">
+
+            <div class="row" id="searchContainer">
+                <div class="col-md-12 d-flex flex-column align-items-end d-md-flex flex-md-row">
+                    <span class="fa fa-circle-notch fa-spin" id="searchLoading" style="display:none; position:absolute;left:35px;"></span>
+                    <input type="text" value="" id="HomeHeaderInput"  placeholder="Pesquise países, estados, cidades..."  class="form-control" autocomplete="family-name" />
+                    <a href="#" class="dropdown-toggle show d-none d-md-flex align-items-center justify-content-center mr-0 mr-md-5" id="HomeHeaderFuelDropdown" data-toggle="dropdown" aria-expanded="false">
+                                                    Gasolina
+                                                </a>
+                    <div class="dropdown-menu" aria-labelledby="HomeHeaderFuelDropdown">
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('1', this.text)">
+                            Gasolina
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('2', this.text)">
+                            Etanol
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('3', this.text)">
+                            Diesel
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('4', this.text)">
+                            Gnv
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div id="searchMessage" style="display:none;padding-top:30px;"></div>
+                    
+
+                    <div id="autocomplete" style="display:none;max-height:300px;overflow-y:auto;">
+                        <div class="row">
+                            <div class="col-md-4" id="autocompleteDivCity">
+                                <table class="table table-borderless">
+                                    <thead><th class="text-left">Cidade</th></thead>
+                                    <tbody id="autocompleteTableCity"></tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-4" id="autocompleteDivState">
+                                <table class="table table-borderless">
+                                    <thead><th class="text-left">Estado</th></thead>
+                                    <tbody id="autocompleteTableState"></tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-4" id="autocompleteDivCountry">
+                                <table class="table table-borderless">
+                                    <thead><th class="text-left">País</th></thead>
+                                    <tbody id="autocompleteTableCountry"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto text-center">   
+                         <p class="btn btn-warning shadow text-black" href="">
+                            Aqui você encontra o melhor posto e combustível de sua preferência
+                         </p>
+                        </div>
+                    </div>                    
+
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto text-center" style="height: 150px;">
+                                                        <!-- <style type="text/css">
+                                    ins.adsbygoogle {
+                                        height: 150px;
+                                        min-height: 120px;
+                                    }
+
+                                </style> -->
+                                <div class="col-12 px-0" style="min-height: 120px;height: 130px;max-height: 150px;bottom: 0px;position: absolute;">
+                                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                    <!-- homeHorizontal -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-1511531556004960"
+                                         data-ad-slot="1100732401"
+                                         data-ad-format="link"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- 
+        <div class="pt-4">
+            <div class="container">
+                <div class="row" style="width: 100%; height: 100px;">
+	            	<div class="col-12 text-center" style="width: 100%; height: 100px;">
+		                <!- - newgaspass - ->
+						<ins class="adsbygoogle"
+						     style="display:block"
+						     data-ad-client="ca-pub-1511531556004960"
+						     data-ad-slot="5753030534"
+						     data-ad-format="auto"
+						     data-full-width-responsive="false"></ins>
+
+						<script>
+						    (adsbygoogle = window.adsbygoogle || []).push({
+						    google_ad_client: "ca-pub-1511531556004960"
+						    });
+						</script>
+	                </div>
+                </div>        
+            </div>
+        </div> -->
+
+        <div class="features-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Pague menos quando abastecer.</h2>
+                        <h4 class="description">Receba descontos usando este site ou o aplicativo (em breve).</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="info info-horizontal">
+                            <div class="icon icon-info">
+                                <i class="now-ui-icons business_money-coins"></i>
+                            </div>
+                            <div class="description">
+                                <h5 class="info-title">Preços</h5>
+                                <p>Encontre os Postos com os melhores Preços</p>
+                            </div>
+                        </div>
+
+                        <div class="info info-horizontal">
+                            <div class="icon icon-danger">
+                                <i class="now-ui-icons location_compass-05"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">Navegador</h4>
+                                <p>Utilize o navegador da Preço dos Combustíveis para ter muitas vantagens no abastecimento</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="phone-container">
+                            <img src="https://precodoscombustiveis.com.br/img/oie_transparent2.png">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="info info-horizontal">
+                            <div class="icon icon-primary">
+                                <i class="now-ui-icons business_money-coins"></i>
+                            </div>
+                            <div class="description">
+                                <h5 class="info-title">Desconto</h5>
+                                <p>Tenha descontos quando for abastecer. Atualize preços e ganhe Descontos</p>
+                            </div>
+                        </div>
+
+                        <div class="info info-horizontal">
+                            <div class="icon icon-success">
+                                <i class="now-ui-icons users_single-02"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">Grupos</h4>
+                                <p>Crie e Participe de Grupos no Telegram para aumentar mais as vantagens nos seus postos preferidos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+
+<footer class="footer footer-big"   style="background: url(https://precodoscombustiveis.com.br/img/gasbg.jpg); box-shadow: inset 0 0 0 1000px rgba(22,24,37,.9);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+
+        <div class="content">
+            <div class="row">
+                <div class="offset-1 col-10 offset-md-0 col-md-5">
+                    <h5 class="color-white">Contato</h5>
+                    <div class="">
+                        <p class="text-muted">
+                            <b>
+                                hebarsan@gmail.com
+                            </b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offset-1 col-10 col-md-2">
+                    <h5 class="color-white">Sobre</h5>
+                    <ul class="links-vertical">
+                        <li>
+                            <a href="sobre.html" class="text-muted">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="termos.html" class="text-muted">
+                                Termos de uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="privacidade.html" class="text-muted">
+                                Política de Privacidade
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+        <hr>
+
+        <div class="copyright color-white">
+                <a class="nav-link text-white" href="https://github.com/HeidsonSantana" target="_blank" >
+                    <img style="width:16px;" src="" />
+                    &nbsp;&nbsp;Ajuda
+                </a>
+                <a class="nav-link text-white" rel="tooltip" title="Siga-nos!" data-placement="bottom" href="" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <p class="d-lg-none d-xl-none">Twitter</p>
+                </a>
+                <a class="nav-link text-white" rel="tooltip" title="Curta nossa página!" data-placement="bottom" href="https://facebook.com/heidson.barbosa.5" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    <p class="d-lg-none d-xl-none">Facebook</p>
+                </a>
+                <a class="nav-link text-white" rel="tooltip" title="Confira!" data-placement="bottom" href="https://www.instagram.com/barbosa.santana1234/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <p class="d-lg-none d-xl-none">Instagram</p>
+                </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            Copyright © <script>document.write(new Date().getFullYear())</script> Site criado por <a class="btn btn-warning shadow text-black" href="">Heidson Santana</a>
+        </div>
+    </div>
+</footer>
+
+<script src='https://www.google.com/recaptcha/api.js?render=6LegV4wUAAAAAOLfQ96EgUgV0fxnzeDhwK8UrmMm'></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LegV4wUAAAAAOLfQ96EgUgV0fxnzeDhwK8UrmMm', {action: 'ptBR'}).then(function(token) {
+            // Verify the token on the server.
+        });
+        /*console.log('grecaptcha');
+        console.log(grecaptcha);*/
+    });
+</script>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+<!--   Core JS Files   -->
+
+<script src="https://precodoscombustiveis.com.br/js/core/popper.min.js" type="text/javascript"></script>
+<script src="https://precodoscombustiveis.com.br/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="https://precodoscombustiveis.com.br/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="https://precodoscombustiveis.com.br/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="https://precodoscombustiveis.com.br/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<!--  Google Maps Plugin    -->
+
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="https://precodoscombustiveis.com.br/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
+
+
+    
+
+<!-- --------------Home----------------- -->
+
+    <script>
+        /*$(document).ready(function() {
+            nowuiKit.initSliders();
+        });*/
+
+        function setFuel(fuel, text){
+            $.ajax({
+                    url: "cookie",
+                    method: 'POST',
+                    data: { 'name':'fuel', 'value':fuel },
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function(data) {
+                        $('#HomeHeaderFuelDropdown').html(text);
+                    }
+                }
+            );
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function(){
+
+            var typingTimer;
+            var input = $("#HomeHeaderInput");
+
+            $('#searchUseMyLocation').on('click', function(){
+                uselocation();
+            });
+
+            function uselocation(){
+                if ("geolocation" in navigator) {
+                    $('#searchUseMyLocationIcon').addClass('fa-spin');
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        $.ajax({
+                            url:'location',
+                            method: 'POST',
+                            data:{
+                                lat:position.coords.latitude,
+                                lng:position.coords.longitude
+                            },
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            },
+                            success: function(data){
+                                console.log(data);
+                                window.location.replace("/my-location");
+                            },
+                            error: function(e){
+                                $('#searchUseMyLocationIcon').addClass('fa-spin');
+                            }
+                        });
+                        //console.log(position.coords.latitude, position.coords.longitude);
+                    });
+                } else {
+                    alert("Location unavailable");
+                }
+            }
+
+            input.on('keyup', function(){
+                clearTimeout(typingTimer);
+                typingTimer = setTimeout(doneTyping, 100);
+                $('#searchLoading').fadeIn();
+            });
+
+            function doneTyping() {
+                $.ajax({
+                        url: "pt-BR/search/autocomplete",
+                        dataType: "json",
+                        data: {
+                            term: input.val()
+                        },
+                        success: function( data ) {
+                            $('#searchMessage').html("").hide();
+
+                            if(data.cidade.length > 0){ $('#autocompleteDivCity').fadeIn(); $('#autocompleteTableCity').html(''); }else{ $('#autocompleteDivCity').hide(); }
+                            $.each(data.cidade, function (i, v) {
+                                $('#autocompleteTableCity').append('<tr><td class="text-left"><a href="' + v.url + '">' + v.value + '</a></td></tr>');
+                            });
+
+                            if(data.estado.length > 0){ $('#autocompleteDivState').fadeIn(); $('#autocompleteTableState').html(''); }else{ $('#autocompleteDivState').hide(); }
+                            $.each(data.estado, function(i,v){
+                                $('#autocompleteTableState').append('<tr><td class="text-left"><a href="'+v.url+'">'+v.value+'</a></td></tr>');
+                            });
+
+                            if(data.pais.length > 0){ $('#autocompleteDivCountry').fadeIn(); $('#autocompleteTableCountry').html(''); }else{ $('#autocompleteDivCountry').hide(); }
+                            $.each(data.pais, function(i,v){
+                                $('#autocompleteTableCountry').append('<tr><td class="text-left"><a href="'+v.url+'">'+v.value+'</a></td></tr>');
+                            });
+
+                            if(data.cidade.length == 0 && data.estado.length == 0 && data.pais.length == 0){
+                                $('#searchMessage').html("<b>Nenhum resultado</b>").fadeIn();
+                                $('#autocomplete').hide();
+                            }else{
+                                $('#searchMessage').html("").hide();
+                                $('#autocomplete').fadeIn();
+                            }
+
+                            console.log(data);
+                            $('#searchLoading').fadeOut();
+                        },
+                        fail: function( data ) {
+                            $('#searchMessage').html("").hide();
+                            $('#autocomplete').hide();
+                            $('#searchLoading').fadeOut();
+                        },
+                        error: function( data ) {
+                            $('#searchMessage').html("").hide();
+                            $('#autocomplete').hide();
+                            $('#searchLoading').fadeOut();
+                        },
+                    }
+                );
+            }
+
+        });
+    </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa6umHHsUUEL8J4rj8iqf6z0_YTG6OkjU&libraries=places"></script>
+<script>
+    function setLocale(locale){
+        console.log('asdf');
+        $.ajax({
+                url: "/cookie",
+                method: 'POST',
+                data: { 'name':'locale', 'value':locale },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(data){
+                    location.reload();
+                }
+            }
+        );
+    }
+
+    var typingTimer;
+    var i = $("#MenuSearchInput");
+
+    $('#searchUseMyLocation').on('click', function(){
+        uselocation();
+    });
+
+    function uselocation(){
+        if ("geolocation" in navigator) {
+            $('#searchUseMyLocationIcon').addClass('fa-spin');
+            navigator.geolocation.getCurrentPosition(function(position) {
+                $.ajax({
+                    url:'location',
+                    method: 'POST',
+                    data:{
+                        lat:position.coords.latitude,
+                        lng:position.coords.longitude
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function(data){
+                        window.location.replace("/my-location");
+                    },
+                    error: function(e){
+                        $('#searchUseMyLocationIcon').addClass('fa-spin');
+                    }
+                });
+                console.log(position.coords.latitude, position.coords.longitude);
+            });
+        } else {
+            alert("Location unavailable");
+        }
+    }
+
+    i.on('blur', function(e){
+        $('#MenuSearchDropdown').fadeOut();
+    });
+
+    i.on('keyup', function (e) {
+        console.log('a');
+        clearTimeout(typingTimer);
+        $('#MenuSearchLoading').hide();
+        if(i.val().length == 0) {
+            $('#MenuSearchDropdown').hide();
+        }else{
+            typingTimer = setTimeout(doneTypingMenu, 500);
+        }
+    });
+
+    function doneTypingMenu() {
+        $('#MenuSearchLoading').fadeIn();
+        $.ajax({
+                url: "/pt-BR/search/autocomplete",
+                dataType: "json",
+                data: {
+                    term: i.val()
+                },
+                success: function( data ) {
+                    $('#MenuSearchDropdown').fadeIn();
+                    $('#MenuSearchMessage').html("").hide();
+
+                    if(data.cidade.length > 0){ $('#autocompleteDivCity').fadeIn(); $('#autocompleteTableCity').html(''); }else{ $('#autocompleteDivCity').hide(); }
+                    $.each(data.cidade, function (i, v) {
+                        $('#autocompleteTableCity').append('<a class="dropdown-item" href="' + v.url + '">' + v.value + '</a>');
+                    });
+
+                    if(data.estado.length > 0){ $('#autocompleteDivState').fadeIn(); $('#autocompleteTableState').html(''); }else{ $('#autocompleteDivState').hide(); }
+                    $.each(data.estado, function(i,v){
+                        $('#autocompleteTableState').append('<a class="dropdown-item" href="'+v.url+'">'+v.value+'</a></td></tr>');
+                    });
+
+                    if(data.pais.length > 0){ $('#autocompleteDivCountry').fadeIn(); $('#autocompleteTableCountry').html(''); }else{ $('#autocompleteDivCountry').hide(); }
+                    $.each(data.pais, function(i,v){
+                        $('#autocompleteTableCountry').append('<a class="dropdown-item" href="'+v.url+'">'+v.value+'</a></td></tr>');
+                    });
+
+                    if(data.cidade.length == 0 && data.estado.length == 0 && data.pais.length == 0){
+                        $('#MenuSearchMessage').html("<b>Nenhum resultado</b>").fadeIn();
+                        //$('#MenuSearchDropdown').hide();
+                    }else{
+                        $('#MenuSearchMessage').html("").hide();
+                        $('#MenuSearchDropdown').fadeIn();
+                    }
+
+                    $('#MenuSearchLoading').fadeOut();
+                },
+                fail: function( data ) {
+                    $('#MenuSearchMessage').html("").hide();
+                    $('#MenuSearchDropdown').hide();
+                    $('#MenuSearchLoading').fadeOut();
+                },
+                error: function( data ) {
+                    $('#MenuSearchMessage').html("").hide();
+                    $('#MenuSearchDropdown').hide();
+                    $('#MenuSearchLoading').fadeOut();
+                },
+            }
+        );
+    }
+
+    function initialize(){
+        console.log('Yasd2');
+        var acInputs = document.getElementById("MenuSearchInput");
+        if(acInputs != null){
+
+            var autocomplete = new google.maps.places.Autocomplete(acInputs);
+            autocomplete.inputId = acInputs.id;
+
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var place = autocomplete.getPlace();
+                if (!place.geometry) {
+                    // User entered the name of a Place that was not suggested and
+                    // pressed the Enter key, or the Place Details request failed.
+                    window.alert("No details available for input: '" + place.name + "'");
+                    return;
+                }
+                //console.log(place.geometry.location.lat());
+                console.log(place.formatted_address);
+                $.ajax({
+                    url:'/location',
+                    method: 'POST',
+                    data:{
+                        lat:place.geometry.location.lat(),
+                        lng:place.geometry.location.lng(),
+                        address:place.formatted_address
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function(data){
+                        window.location.replace("/my-location");
+                    },
+                    error: function(e){
+                        $('#searchUseMyLocationIcon').removeClass('fa-spin');
+                    }
+                });
+            });
+
+        }
+    }
+
+    initialize();
+
+    function toggleMenuSearchBox(){
+        if($(window).scrollTop() > 100){
+            $("html, body").animate({ scrollTop: "0px" });
+            $('#menuSearchBox').show();
+            $('#dowloadAppBox').hide();
+        }else{
+            if($('#menuSearchBox').is(':visible')){
+                $('#menuSearchBox').toggle();
+                $('#dowloadAppBox').toggle();
+            }else{
+                $("html, body").animate({ scrollTop: "0px" });
+                $('#menuSearchBox').toggle();
+                $('#dowloadAppBox').toggle();
+            }
+        }
+    }
+
+
+    var ratefeedback = 4;
+    $("#star_1").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','far fa-star');
+        $("#star_3").attr('class','far fa-star');
+        $("#star_4").attr('class','far fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 1;
+    });
+    $("#star_2").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','far fa-star');
+        $("#star_4").attr('class','far fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 2;
+    });
+    $("#star_3").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','far fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 3;
+    });
+    $("#star_4").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','fas fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 4;
+    });
+    $("#star_5").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','fas fa-star');
+        $("#star_5").attr('class','fas fa-star');
+        ratefeedback = 5;
+    });
+
+
+    $("#exampleInputEmail1").focus(function () {
+
+        $("#exampleInputEmail1").html('');
+        $("#exampleInputEmail1").text('');
+
+    });
+
+    $("#btn_submit_feedback").click(function () {
+        setTimeout(function () {$("#modal_feedback_body").html('<i class="now-ui-icons loader_refresh spin"></i>')},300);
+        // var jqxhr = $.ajax( "https://precodoscombustiveis.com.br/mail/send_feedback/Filipe/filipelopesuser@gmail.com/4/mensagemsobreosite" )
+        var jqxhr = $.ajax( "https://precodoscombustiveis.com.br/mail/send_feedback/Site/"+$('#exampleInputEmail1').val()+"/"+ratefeedback+"/"+$('exampleFormControlTextarea1').val()+"/" )
+            .done(function() {
+                // alert( "success" );
+                setTimeout(function () {$("#modal_feedback_body").html('<p>Agradecemos o seu contato.</p>')},500);
+            })
+            .fail(function() {
+                // alert( "error" );
+                setTimeout(function () {$("#modal_feedback_body").html('<p>Agradecemos o seu contato.</p>')},500);
+            })
+            .always(function() {
+                // alert( "complete" );
+                setTimeout(function () {$("#btn_close_feedback").click()},2000);
+            });
+    });
+
+    $( "#exampleFormControlTextarea1" ).focus(function() {
+        $( "#exampleFormControlTextarea1" ).html('');
+        $( "#exampleFormControlTextarea1" ).text('');
+    });
+
+
+    setTimeout(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','fas fa-star');
+        $("#star_5").attr('class','far fa-star');
+    },1500);
+
+</script>
+<script>
+
+        function setFuel(fuel, text){
+            $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "/cookie",
+                    method: 'POST',
+                    data: { 'name':'fuel', 'value':fuel },
+                    success: function(data) {
+                        $('#btnFuel').html(text);
+                        location.reload();
+                    }
+                }
+            );
+        }
+
+        $('#btnDistance').on('click', function(e){
+            setOrder("distance", $('#btnDistance').text());
+        });
+
+        $('#btnPrice').on('click', function(e){
+            setOrder("price_value", $('#btnPrice').text());
+        });
+
+        function setOrder(order, text){
+            $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "/cookie",
+                    method: 'POST',
+                    data: { 'name':'order', 'value':order },
+                    success: function(data) {
+                        $('#btnOrder').html(text);
+                        location.reload();
+                    }
+                }
+            );
+        }
+
+        $('#refreshAddress').on('click', uselocation);
+
+        function uselocation(){
+            if ("geolocation" in navigator) {
+                $('#refreshAddressIcon').addClass('fa-spin');
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    $.ajax({
+                        url:'location',
+                        method: 'POST',
+                        data:{
+                            lat:position.coords.latitude,
+                            lng:position.coords.longitude
+                        },
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        },
+                        success: function(data){
+                            window.location.replace("/my-location");
+                        },
+                        error: function(e){
+                            $('#refreshAddressIcon').removeClass('fa-spin');
+                        }
+                    });
+                    console.log(position.coords.latitude, position.coords.longitude);
+                });
+            } else {
+                alert("Location unavailable");
+            }
+        }
+    </script>  
+</body>
+
+</html>

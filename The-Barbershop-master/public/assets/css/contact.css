@@ -1,0 +1,24 @@
+.contactContainer {
+  text-align: center;
+}
+
+
+ul li {
+  display:inline-block;
+}
+
+.columns {
+  text-align: center;
+}
+.columns ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom:1;
+  *display: inline;
+}
+.columns li {
+  float: left;
+  padding: 2px 5px;
+}
