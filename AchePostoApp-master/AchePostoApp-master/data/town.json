@@ -1,0 +1,37 @@
+[
+  {
+    "id": "01",
+    "name": "Porto Novo",
+    "id_province": "08"
+  },
+  {
+    "id": "02",
+    "name": "Jardim Britania",
+    "id_province": "08"
+  },
+  {
+    "id": "03",
+    "name": "Indaiá",
+    "id_province": "08"
+  },
+  {
+    "id": "04",
+    "name": "Centro - Caraguá",
+    "id_province": "08"
+  },
+  {
+    "id": "05",
+    "name": "Martim de Sá",
+    "id_province": "08"
+  },
+  {
+    "id": "06",
+    "name": "Massaguaçu",
+    "id_province": "08"
+  },
+  {
+    "id": "07",
+    "name": "Tabatinga",
+    "id_province": "08"
+  }
+]

@@ -1,0 +1,22 @@
+<div class="wall"></div>
+<div class="container-fluid">
+  <div class="cover">
+    <div>
+      <h1>Ache postos de combustíveis próximos de você</h1>
+      <p>ACHEPOSTO permite que você encontre os postos de combustiveis em Caraguatatuba com os melhores preços para todos os tipos de combustíveis</p>
+      <form class="form-inline search-form" role="form">
+        <div class="form-group inner-addon left-addon">
+          <label class="sr-only" for="">label</label>
+          <i class="glyphicon glyphicon-search"></i>
+          <input type="text" class="form-control input-lg" id="inputCaraguatatuba" value="  Caraguatatuba" placeholder="Caraguatatuba" disabled />
+          <input class="input-lg" type="text" ng-model="queryLocation" required list="locations" placeholder="Comece a escrever ou selecione da lista...">
+          <datalist id="locations">
+            <option ng-repeat="station in gasStations" value="{{ station.id }}:{{ station.name }}">{{ station.name }}</option>
+          </datalist>
+        </div>
+        <button ng-click="getStationsByTown()" type="submit" class="btn btn-lg btn-primary">VEJA OS POSTOS DE GASOLINA</button>
+        <label for="" class="label-home">Logo logo em mais cidades !!!!!</label>
+      </form>
+    </div>
+  </div>
+</div>
